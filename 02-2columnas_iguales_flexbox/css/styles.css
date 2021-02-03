@@ -38,4 +38,18 @@ h1 {
     text-transform: uppercase;
 }
 
+
 /** CODIGO AQUI **/
+
+@media (min-width:768px) {
+    .flex {
+        display: flex;
+        /* column-gap: 2rem; NUEVO*/
+        justify-content: space-between;
+    }
+    /* modo antiguo para separar */
+    .entrada-blog {
+        flex: 0 0 calc(50% - 1rem);
+        /* Primera valor factor de que crezca, el segundo disminuya y el ultimo el tamaño y separacion ojo necesita tener el justify-content */
+    }
+}

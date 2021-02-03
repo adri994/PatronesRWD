@@ -49,3 +49,22 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width:768px) {
+    .grid {
+        display: grid;
+        /* Otra forma sin usar numeros */
+        grid-template-areas: "izquierda contenido derecha";
+        grid-template-columns: 1fr 2fr 1fr;
+        column-gap: 2rem;
+        grid-auto-flow: column;
+        /* Esto sirve para que no este abajo sino que al encontrar uno se coloque donde tiene que ir */
+    }
+    .contenido-principal {
+        /* aqui tenmos que colocar grid area para indicar donde esta */
+        /* grid-area: center; */
+    }
+    .sidebar-1 {
+        grid-column: 1 / 2;
+    }
+}

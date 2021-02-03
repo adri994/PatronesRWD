@@ -38,4 +38,13 @@ h1 {
     text-transform: uppercase;
 }
 
+
 /** CODIGO AQUI **/
+
+@media (min-width:768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
